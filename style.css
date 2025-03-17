@@ -221,7 +221,7 @@ body::-webkit-scrollbar-track {
 
 .nav-list {
     display: flex;
-    gap: 20px;
+    gap: 14px;
     list-style: none;
 }
 
@@ -527,19 +527,104 @@ body::-webkit-scrollbar-track {
     }
 }
 
+.QuickScoot-parallax-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
 
+.QuickScoot-parallax-bg {
+    background-image: url('img/home/hero-bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 
+.QuickScoot-content {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    margin: 0 auto;
+    max-width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
+.hero-app-link {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #ffae00;
+    color: white;
+    transition: background-color 0.3s ease;
+}
 
+.comprehensive-care {
+    margin-top: 10px;
+    padding: 20px;
+}
 
+.comprehensive-blocks-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.comprehensive-image-block {
+    flex: 1 1 30%;
+    margin: 10px;
+}
 
+.comprehensive-care-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 
+.comprehensive-text-block {
+    flex: 1 1 55%;
+    margin: 10px;
+}
 
+.comprehensive-text-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
 
+.comprehensive-product-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
 
+.comprehensive-benefits-list {
+    list-style-type: none;
+    padding-left: 20px;
+}
 
+.comprehensive-benefits-list li {
+    margin-bottom: 5px;
+}
 
+@media (max-width: 768px) {
+    .comprehensive-blocks-container {
+        flex-direction: column;
+    }
+
+    .comprehensive-image-block, .comprehensive-text-block {
+        flex: 1 1 100%;
+    }
+}
 
 
 
@@ -572,5 +657,8 @@ body::-webkit-scrollbar-track {
     }
     .email-privacy-terms:hover {
         text-decoration: underline;
+    }
+    .hero-app-link:hover {
+        background-color: #bd8100;
     }
 }
