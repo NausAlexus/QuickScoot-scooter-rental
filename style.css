@@ -626,17 +626,6 @@ body::-webkit-scrollbar-track {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .quick-scoot-section {
     position: relative;
     padding: 50px 20px;
@@ -668,7 +657,7 @@ body::-webkit-scrollbar-track {
 .app-info-blocks {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap; /* Позволяет колонкам изменять порядок на меньших экранах */
 }
 
@@ -700,7 +689,7 @@ body::-webkit-scrollbar-track {
     font-size: 24px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
     .app-info-blocks {
         flex-direction: column; /* Для мобильных устройств: меняем на колоночное расположение */
     }
