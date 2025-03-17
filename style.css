@@ -887,6 +887,993 @@ body::-webkit-scrollbar-track {
 
 
 
+/* Hero Section */
+.about-hero-section {
+    position: relative;
+    height: 600px;
+    background-image: url('/img/about/about7.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+@media (max-width:900px) {
+    .about-hero-section{
+        margin-top: 50px;
+    }
+    
+}
+
+.about-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.179);
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.about-hero-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-hero-description {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Mission Section */
+.about-mission-section {
+    padding: 60px 20px;
+    background-color: #f0f8ff;
+}
+
+.about-mission-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-mission-text {
+    flex: 1;
+}
+
+.about-mission-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-mission-text p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about-mission-image {
+    flex: 1;
+    text-align: right;
+}
+
+.about-mission-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Values Section */
+.about-values-section {
+    padding: 60px 20px;
+    background-color: #e6f7ff;
+    text-align: center;
+}
+
+.about-values-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-values-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.about-values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.about-value-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-value-card:hover {
+    transform: translateY(-10px);
+}
+
+.about-value-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #4CAF50;
+}
+
+.about-value-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-value-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Team Section */
+.about-team-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about-team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-team-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-team-description {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #555;
+}
+
+.about-team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.about-team-member {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-team-member-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.about-team-member-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-team-member-role {
+    font-size: 1.1rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.about-team-member-bio {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* History Section */
+.about-history-section {
+    padding: 60px 20px;
+    background-color: #fff3e6;
+    text-align: center;
+}
+
+.about-history-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-history-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-history-text {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Achievements Section */
+.about-achievements-section {
+    padding: 60px 20px;
+    background-color: #e6ffe6;
+    text-align: center;
+}
+
+.about-achievements-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-achievements-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.about-achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.about-achievement-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-achievement-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #4CAF50;
+}
+
+.about-achievement-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-achievement-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Customer Stories Section */
+.about-customer-stories-section {
+    padding: 60px 20px;
+    background-color: #ffe6e6;
+    text-align: center;
+}
+
+.about-customer-stories-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-customer-stories-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.about-customer-stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.about-customer-story-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-customer-story-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.about-customer-story-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-customer-story-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* Values Section */
+.about-values-section {
+    padding: 60px 20px;
+    background-color: #e6f7ff;
+    text-align: center;
+}
+
+.about-values-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-values-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.about-values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.about-value-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-value-card:hover {
+    transform: translateY(-10px);
+}
+
+.about-value-icon-container {
+    background-color: #4CAF50;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.about-value-icon {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.about-value-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-value-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Achievements Section */
+.about-achievements-section {
+    padding: 60px 20px;
+    background-color: #fff3e6;
+    text-align: center;
+}
+
+.about-achievements-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.about-achievements-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.about-achievements-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+}
+
+
+@media (max-width: 750px) {
+    .about-achievements-timeline::before {
+        display: none; /* Убираем линию временной шкалы */
+    }
+
+    .about-achievement-item {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .about-achievement-icon {
+        margin-bottom: 10px;
+    }
+
+    .about-achievement-content {
+        margin-left: 0; /* Убираем отступы */
+    }
+    .about-achievement-item{
+        width: 100% !important;
+    }
+}
+
+.about-achievements-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background-color: #4CAF50;
+    transform: translateX(-50%);
+}
+
+.about-achievement-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    width: 45%;
+}
+
+.about-achievement-item:nth-child(odd) {
+    align-self: flex-start;
+}
+
+.about-achievement-item:nth-child(even) {
+    align-self: flex-end;
+}
+
+.about-achievement-icon {
+    background-color: #4CAF50;
+    min-width: 60px;
+    min-height: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.about-achievement-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-achievement-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-achievement-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Customer Stories Section */
+.about-customer-stories-section {
+    padding: 60px 20px;
+    background-color: #ffe6e6;
+    text-align: center;
+}
+
+.about-customer-stories-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-customer-stories-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.about-customer-stories-carousel {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.about-customer-story-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 0 0 300px;
+    text-align: center;
+}
+
+.about-customer-story-image-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+}
+
+.about-customer-story-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-customer-story-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-customer-story-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* Customer Stories Section */
+.about-customer-stories-section {
+    padding: 60px 20px;
+    background-color: #ffe6e6;
+    text-align: center;
+}
+
+.about-customer-stories-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-customer-stories-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.about-customer-stories-carousel {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.about-customer-story-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 0 0 300px;
+    text-align: center;
+}
+
+.about-customer-story-image-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+}
+
+.about-customer-story-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-customer-story-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-customer-story-location {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.about-customer-story-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* Our Partners Section */
+.about-partners-section {
+    background-color: #fff;
+    padding: 50px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-partners-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-partners-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black
+}
+
+.about-partners-description {
+    text-align: center;
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.about-partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.about-partner-card {
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.about-partner-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-partner-logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.about-partner-name {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin: 10px 0;
+}
+
+.about-partner-description {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+/* Sustainability Commitment Section */
+.about-sustainability-section {
+    background-color: #2ecc71;
+    padding: 50px 20px;
+    color: #fff;
+}
+
+.about-sustainability-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-sustainability-description {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.about-sustainability-stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-sustainability-stat {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 200px; /* Ensure minimal width */
+    transition: background-color 0.3s;
+}
+
+.about-sustainability-stat:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.about-sustainability-stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.about-sustainability-stat-text {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+    /* Hero Section */
+    .about-hero-section {
+        height: 300px;
+    }
+
+    .about-hero-title {
+        font-size: 1.8rem;
+    }
+
+    .about-hero-description {
+        font-size: 1rem;
+    }
+
+    /* Mission Section */
+    .about-mission-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-mission-image {
+        text-align: center;
+    }
+
+    .about-mission-image img {
+        max-width: 80%;
+    }
+
+    /* Values Section */
+    .about-values-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    /* Team Section */
+    .about-team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    /* History Section */
+    .about-history-container {
+        max-width: 100%;
+    }
+
+    /* Achievements Section */
+    .about-achievements-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    /* Customer Stories Section */
+    .about-customer-stories-carousel {
+        flex-direction: column;
+        gap: 20px;
+        overflow-x: visible;
+    }
+
+    .about-customer-story-card {
+        flex: 1 1 auto;
+    }
+
+    /* Our Partners Section */
+    .about-partners-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    /* Sustainability Commitment Section */
+    .about-sustainability-stats {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+}
+
+/* Адаптация для планшетов */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Hero Section */
+    .about-hero-section {
+        height: 350px;
+    }
+
+    .about-hero-title {
+        font-size: 2.2rem;
+    }
+
+    .about-hero-description {
+        font-size: 1.1rem;
+    }
+
+    /* Mission Section */
+    .about-mission-container {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .about-mission-image img {
+        max-width: 90%;
+    }
+
+    /* Values Section */
+    .about-values-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+    }
+
+    /* Team Section */
+    .about-team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+    }
+
+    /* Achievements Section */
+    .about-achievements-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+    }
+
+    /* Customer Stories Section */
+    .about-customer-stories-carousel {
+        gap: 25px;
+    }
+
+    /* Our Partners Section */
+    .about-partners-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+    }
+
+    /* Sustainability Commitment Section */
+    .about-sustainability-stats {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+    }
+}
+
+
+.about-partners-section {
+    background: linear-gradient(135deg, #f3f4f6, #ffffff);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-partners-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: black
+}
+
+.about-partners-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.about-partner-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 220px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-partner-card:hover {
+    transform: scale(1.1);
+}
+
+.partner-icon img {
+    width: 80px;
+    height: 80px;
+}
+
+.about-partner-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.about-partner-description {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Секция устойчивости */
+.about-sustainability-section {
+    background: #504e00;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-sustainability-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #d0ff00;
+}
+
+.about-sustainability-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.about-sustainability-stat {
+    width: 180px;
+    text-align: center;
+    position: relative;
+}
+
+.about-sustainability-stat-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.about-sustainability-stat-text {
+    font-size: 14px;
+    color: #ddd;
+}
+
+.about-sustainability-stat::after {
+    content: "";
+    display: block;
+    height: 6px;
+    width: 100%;
+    background: #ffcc00;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    border-radius: 10px;
+    animation: progress-bar 1.5s ease-in-out forwards;
+}
+
+@keyframes progress-bar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
 
 
 
@@ -924,3 +1911,6 @@ body::-webkit-scrollbar-track {
         transform: scale(1.05);
     }
 }
+
+
+
