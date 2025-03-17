@@ -635,6 +635,90 @@ body::-webkit-scrollbar-track {
 
 
 
+
+
+.quick-scoot-section {
+    position: relative;
+    padding: 50px 20px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.app-info-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+}
+
+.app-info-content {
+    position: relative;
+    z-index: 1; /* Убирает накладывание на контент */
+    text-align: center;
+}
+
+.app-info-section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.app-info-blocks {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Позволяет колонкам изменять порядок на меньших экранах */
+}
+
+.app-info-block {
+    flex: 1;
+    padding: 10px;
+    min-width: 250px; /* Минимальная ширина для блоков на маленьких экранах */
+}
+
+.app-info-left-block,
+.app-info-right-block {
+    display: flex;
+    justify-content: center;
+}
+
+.app-info-block-image {
+    max-width: 100%;
+    height: auto; /* Обеспечивает корректную пропорцию изображения */
+}
+
+.app-info-step-list {
+    list-style-type: none; 
+    padding: 0;
+    text-align: left;
+}
+
+.app-info-step-list li {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+@media (max-width: 1000px) {
+    .app-info-blocks {
+        flex-direction: column; /* Для мобильных устройств: меняем на колоночное расположение */
+    }
+    .app-info-step-list li {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 1025px) {
     .header-link:hover,
     .footer-brand:hover {
