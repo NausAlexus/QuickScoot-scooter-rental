@@ -2725,16 +2725,6 @@ body::-webkit-scrollbar-track {
         height: 100%;
     }
 }
-  
-
-
-
-
-
-
-
-
-
 
 .partnership-section {
     background-color: #f9f9f9;
@@ -2767,17 +2757,6 @@ body::-webkit-scrollbar-track {
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 1025px) {
     .header-link:hover,
