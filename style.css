@@ -1869,14 +1869,6 @@ body::-webkit-scrollbar-track {
     }
 }
 
-
-
-
-
-
-
-
-
 .faq-content {
     margin-top: 100px;
 }
@@ -1951,6 +1943,155 @@ body::-webkit-scrollbar-track {
     }
 }
 
+.scooter-section {
+    padding: 20px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.scooter-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.scooter-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.scooter-card {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    width: calc(25% - 20px); /* Для 4 колонок на больших экранах */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.scooter-card:hover {
+    transform: translateY(-5px);
+}
+
+.scooter-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.scooter-name {
+    font-size: 1.5rem;
+    margin: 10px 0 5px;
+}
+
+.scooter-description {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.scooter-price {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: rgb(194, 0, 0);
+}
+
+.scooter-button {
+    display: inline-block;
+    padding: 10px 40px;
+    background: #000000;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease,
+                background-color 0.3s ease;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .scooter-card {
+        width: calc(50% - 20px); /* Для 2 колонок на средних экранах */
+    }
+}
+
+@media (max-width: 480px) {
+    .scooter-card {
+        width: 100%; /* Для 1 колонки на маленьких экранах */
+    }
+}
+
+.scooter-details {
+    background-color: #ffffff; /* Белый фон для контрастности */
+    padding: 30px 20px; /* Отступы по вертикали и горизонтали */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для создания эффекта подъема */
+    margin: 20px 0; /* Отступ над и под секцией */
+}
+
+.scooter-details__title {
+    font-size: 2rem; /* Размер шрифта для заголовка */
+    text-align: center; /* Выравнивание текста по центру */
+    color: #333; /* Темный цвет текста */
+    margin-bottom: 25px; /* Отступ под заголовком для разделения с остальным контентом */
+}
+
+.scooter-details__item {
+    background: #f9f9f9; /* Светлый фон для отдельных деталей самокатов */
+    padding: 20px; /* Внутренние отступы */
+    border-radius: 6px; /* Закругленные углы */
+    margin-bottom: 15px; /* Отступ между карточками */
+    transition: background 0.3s; /* Плавный переход к изменению фона */
+}
+
+.scooter-details__name {
+    font-size: 1.5rem; /* Размер шрифта для названий самокатов */
+    margin-bottom: 10px; /* Отступ под названием */
+    color: #007bff; /* Цвет текста для названий (синий) */
+    text-transform: uppercase; /* Преобразование текста в верхний регистр для выделения */
+}
+
+.scooter-details__description {
+    font-size: 1rem; /* Размер текста для описания */
+    color: #555; /* Цвет текста для описания */
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .scooter-details__item {
+        padding: 15px; /* Уменьшенные отступы на мобильных */
+    }
+
+    .scooter-details__title {
+        font-size: 1.8rem; /* Уменьшение размера заголовка */
+    }
+
+    .scooter-details__name {
+        font-size: 1.3rem; /* Уменьшение размера названий */
+    }
+
+    .scooter-details__description {
+        font-size: 0.9rem; /* Уменьшение размера описания */
+    }
+}
+
+@media (max-width: 480px) {
+    .scooter-details__item {
+        padding: 10px; /* Дополнительное уменьшение отступов на очень маленьких экранах */
+    }
+
+    .scooter-details__title {
+        font-size: 1.5rem; /* Еще большее уменьшение размера заголовка */
+    }
+
+    .scooter-details__name {
+        font-size: 1.2rem; /* Уменьшение названий до читабельного размера */
+    }
+
+    .scooter-details__description {
+        font-size: 0.8rem; /* Уменьшение размера описания */
+    }
+}
 
 
 
@@ -1993,6 +2134,13 @@ body::-webkit-scrollbar-track {
     }
     .why-us-card:hover {
         transform: scale(1.05);
+    }
+    .scooter-button:hover {
+        background-color: #ffae00;
+        color: black;
+    }
+    .scooter-details__item:hover {
+        background: #eaeaea; /* Изменение фона при наведении */
     }
 }
 
