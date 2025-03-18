@@ -2047,7 +2047,7 @@ body::-webkit-scrollbar-track {
 .scooter-details__name {
     font-size: 1.5rem; /* Размер шрифта для названий самокатов */
     margin-bottom: 10px; /* Отступ под названием */
-    color: #007bff; /* Цвет текста для названий (синий) */
+    color: #bd8100; /* Цвет текста для названий (синий) */
     text-transform: uppercase; /* Преобразование текста в верхний регистр для выделения */
 }
 
