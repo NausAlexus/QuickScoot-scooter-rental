@@ -2572,6 +2572,8 @@ body::-webkit-scrollbar-track {
     margin: 0 auto;
     margin-top: 120px;
     margin-bottom: 50px;
+    gap: 30px;
+    padding: 10px;
   }
   
   .form-image {
@@ -2705,10 +2707,14 @@ body::-webkit-scrollbar-track {
     height: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .location-section {
         flex-direction: column;
     }
+    .contact-form-container{
+        flex-direction: column;
+    }
+    
 
     .location-info {
         margin-right: 0;
