@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/style.css" />
 
     <script src="/burgerMenu.js" defer></script>
+    <script src="/cooperation.js" defer></script>
 
 </head>
 
@@ -56,8 +57,28 @@
         </nav>
     </header>
 
-    <main class="cooperation-content">
-
+    <main class="cooperation">
+        <section class="cooperation-parallax-section">
+            <div class="cooperation-parallax-bg"></div>
+            <div class="cooperation-content">
+                <h1 class="cooperation-main-title">Partnership</h1>
+                <p class="cooperation-description">Become our partner and join QuickScoot for joint promotion!</p>
+            </div>
+        </section>
+        <section class="new-arrivals">
+            <h2 class="new-arrivals-title">Our sweet catalog</h2>
+            <div class="new-arrivals-slider">
+                <div class="new-arrivals-slider-container">
+                    <div class="new-arrivals-card">
+                        <img src="img/products/product-1.jpg" alt="promo 1">
+                        <h3>Cookie</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <button class="new-arrivals-prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="new-arrivals-next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">

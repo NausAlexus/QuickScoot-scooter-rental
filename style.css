@@ -2230,18 +2230,6 @@ body::-webkit-scrollbar-track {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .delivery-options-section {
     max-width: 100%;
     margin: 0 auto;
@@ -2319,6 +2307,138 @@ body::-webkit-scrollbar-track {
     }
 }
 
+.cooperation-parallax-section {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.cooperation-parallax-bg {
+    background-image: url('img/cooperation/cooperation-bg-parallax.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.cooperation-content {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    margin: 0 auto;
+    max-width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.new-arrivals {
+    padding: 20px;
+    text-align: center;
+}
+
+.new-arrivals-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #000000;
+    font-weight: 900;
+}
+
+.new-arrivals-card h3 {
+    color: #000000;
+}
+
+.new-arrivals-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.new-arrivals-slider-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    justify-content: flex-start;
+}
+
+.new-arrivals-card {
+    border: 3px solid #000000;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 0 0 calc(25% - 20px);
+    min-width: 200px;
+}
+
+.new-arrivals-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.new-arrivals-card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.new-arrivals-card p {
+    color: #000000;
+}
+
+.new-arrivals-prev, .new-arrivals-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #7e480b86;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.new-arrivals-prev {
+    left: 10px;
+}
+
+.new-arrivals-next {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .new-arrivals-card {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .new-arrivals-card {
+        flex: 0 0 calc(100% - 20px);
+    }
+}
 
 
 
