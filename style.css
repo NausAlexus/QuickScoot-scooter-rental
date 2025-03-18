@@ -2340,24 +2340,12 @@ body::-webkit-scrollbar-track {
     transform: translateY(-50%);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.new-arrivals {
+.cooperation {
     padding: 20px;
     text-align: center;
 }
 
-.new-arrivals-title {
+.cooperation-title {
     font-size: 2.5em;
     margin-bottom: 20px;
     font-weight: bold;
@@ -2365,22 +2353,22 @@ body::-webkit-scrollbar-track {
     font-weight: 900;
 }
 
-.new-arrivals-card h3 {
+.cooperation-card h3 {
     color: #000000;
 }
 
-.new-arrivals-slider {
+.cooperation-slider {
     position: relative;
     overflow: hidden;
 }
 
-.new-arrivals-slider-container {
+.cooperation-slider-container {
     display: flex;
     transition: transform 0.5s ease;
     justify-content: flex-start;
 }
 
-.new-arrivals-card {
+.cooperation-card {
     border: 3px solid #000000;
     border-radius: 8px;
     margin: 10px;
@@ -2391,54 +2379,98 @@ body::-webkit-scrollbar-track {
     min-width: 200px;
 }
 
-.new-arrivals-card img {
+.cooperation-card img {
     width: 100%;
     height: auto;
     border-radius: 5px;
 }
 
-.new-arrivals-card h3 {
+.cooperation-card h3 {
     font-size: 1.5em;
     margin: 10px 0;
 }
 
-.new-arrivals-card p {
+.cooperation-card p {
     color: #000000;
 }
 
-.new-arrivals-prev, .new-arrivals-next {
+.cooperation-prev, .cooperation-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #7e480b86;
+    background-color: #8c8c8c86;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
     z-index: 10;
     transition: background-color 0.3s ease;
 }
 
-.new-arrivals-prev {
+.cooperation-prev {
     left: 10px;
 }
 
-.new-arrivals-next {
+.cooperation-next {
     right: 10px;
 }
 
 @media (max-width: 768px) {
-    .new-arrivals-card {
+    .cooperation-card {
         flex: 0 0 calc(50% - 20px);
     }
 }
 
 @media (max-width: 480px) {
-    .new-arrivals-card {
+    .cooperation-card {
         flex: 0 0 calc(100% - 20px);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+.partnership-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.partnership-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.partnership-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.partnership-section a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #000000;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+
 
 
 
@@ -2488,6 +2520,12 @@ body::-webkit-scrollbar-track {
     }
     .scooter-details__item:hover {
         background: #eaeaea; /* Изменение фона при наведении */
+    }
+    .cooperation-prev:hover, .cooperation-next:hover {
+        background-color: #00000086;
+    }
+    .partnership-section a:hover {
+        background-color: #bd8100;
     }
 }
 
