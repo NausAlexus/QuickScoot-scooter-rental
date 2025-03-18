@@ -58,6 +58,51 @@
 
     <main class="contacts-content">
 
+
+        <section id="form" class="contact-form-section">
+            <div class="contact-form-container">
+              <div class="form-image">
+                <img src="/img/contact.jpg" alt="Contact Us" />
+              </div>
+              <div class="form-content">
+                <h2>Leave Your Request</h2>
+                <form action="/thanks_form.php" method="post">
+                  <input type="text" id="name" name="name" placeholder="Enter your name" required />
+    
+                  <input type="email" id="email" name="email" placeholder="Enter your email" required />
+    
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Enter your comment"
+                    rows="5"
+                    required
+                  ></textarea>
+    
+                  <div class="checkbox">
+                    <input type="checkbox" id="privacy-policy" value="on" name="privacy" required />
+                    <label for="privacy-policy">
+                     I agree to the <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
+                    </label>
+                  </div>
+                  <button type="submit">Submit</button>
+                </form>
+              </div>
+            </div>
+          </section>
+
+          <section class="location-section">
+            <div class="location-info">
+                <h2 class="location-title">Accessible location</h2>
+                <p class="location-description">
+                    QuickScoot is available in multiple convenient locations across India, making it easy for you to rent an electric scooter wherever you are. Whether you're in New Delhi, Mumbai, Bangalore, or other major cities, we're here to provide you with eco-friendly and efficient transportation.                </p>
+                <a class="contact-footer" href="https://maps.app.goo.gl/AUHXmPGcvp1oGHiH7" target="_blank"><i class="fas fa-map-marker-alt"></i>68, Khera Dabar, New Delhi, Delhi, 110073, India</a>
+            </div>
+            <div class="location-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d471.0255137200691!2d76.93752692958861!3d28.58151175534807!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d11e909b9d29d%3A0xf7e2ff7ecc320b64!2zNjgsIEtoZXJhIERhYmFyLCBOZXcgRGVsaGksIERlbGhpLCAxMTAwNzMsINCY0L3QtNC40Y8!5e1!3m2!1sru!2sde!4v1742320710697!5m2!1sru!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                 </section>
+
     </main>
 
     <footer class="footer">
