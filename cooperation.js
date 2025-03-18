@@ -1,6 +1,6 @@
 let currentSlide = 0;
-const sliderContainer = document.querySelector('.new-arrivals-slider-container');
-const totalSlides = document.querySelectorAll('.new-arrivals-card').length;
+const sliderContainer = document.querySelector('.cooperation-slider-container');
+const totalSlides = document.querySelectorAll('.cooperation-card').length;
 
 function moveSlide(direction) {
     const slidesToShow = getSlidesToShow();
