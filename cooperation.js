@@ -33,11 +33,18 @@ window.addEventListener('resize', () => {
 document.addEventListener('DOMContentLoaded', () => {
     moveSlide(0);
 
-    document.querySelector('.new-arrivals-prev').addEventListener('click', () => {
-        moveSlide(-1);
-    });
+    const prevButton = document.querySelector('.new-arrivals-prev');
+    const nextButton = document.querySelector('.new-arrivals-next');
 
-    document.querySelector('.new-arrivals-next').addEventListener('click', () => {
-        moveSlide(1);
-    });
+    if (prevButton) {
+        prevButton.addEventListener('click', () => moveSlide(-1));
+    } else {
+        return
+    }
+
+    if (nextButton) {
+        nextButton.addEventListener('click', () => moveSlide(1));
+    } else {
+        return
+    }
 });
