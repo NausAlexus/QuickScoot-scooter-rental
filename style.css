@@ -891,7 +891,7 @@ body::-webkit-scrollbar-track {
 .about-hero-section {
     position: relative;
     height: 600px;
-    background-image: url('/img/about/about7.jpg');
+    background-image: url('./img/about/about7.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
