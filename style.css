@@ -619,6 +619,7 @@ body::-webkit-scrollbar-track {
 @media (max-width: 768px) {
     .comprehensive-blocks-container {
         flex-direction: column;
+        gap: 25px;
     }
 
     .comprehensive-image-block, .comprehensive-text-block {
@@ -1877,6 +1878,7 @@ body::-webkit-scrollbar-track {
     text-align: center;
     font-weight: 900;
     font-size: 28px;
+    padding: 0 15px;
 }
 
 .faq-section {
@@ -2530,6 +2532,7 @@ body::-webkit-scrollbar-track {
 
     .app-hero-content {
         margin-bottom: 40px;
+        margin-top: 30px;
     }
 
     .app-hero-title {
@@ -2806,5 +2809,9 @@ body::-webkit-scrollbar-track {
     }
 }
 
+
+.whiteText{
+    color: white;
+}
 
 
